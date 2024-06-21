@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
+    <title>Economía en línea</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="Imagenes/IMAGO NARANJA.png" alt="Logo de la Unemi">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="#calendar">Calendario</a></li>
+                    <li><a href="#">Foro</a></li>
+                    <li><a href="#">Trabajos estudiantiles</a></li>
+                    <li><a href="https://uteca.unemi.edu.ec/">Biblioteca</a></li>
+                    <li><a href="#">Simulación</a></li>
+                    <li><a href="anuncios.html">Anuncios</a></li>
+                    <li><a href="Encuestas.html">Encuestas</a></li>
+                    <li><a href="Tutorias.html">Tutorías</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                </ul>
+            </nav>
+            <a href="" class="btn"><button>Cerrar sesión</button></a>
+        </div>
+    </header>
+
+    <div class="container-all">
+        <a href="https://www.unemi.edu.ec/">
+            <input type="radio" id="1" name="image-side" hidden/>
+        <input type="radio" id="2" name="image-side" hidden/>
+        <input type="radio" id="3" name="image-side" hidden/>
+        <div class="slider">
+            <div class="item-slider">
+                <img src="Imagenes/Unemipag1.jpg">
+            </div>
+
+            <div class="item-slider">
+                <img src="Imagenes/Unemipg2.jpg">
+            </div>
+
+            <div class="item-slider">
+                <img src="Imagenes/Unemipg3.jpg">
+            </div>
+        </div>
+        <div class="pagination">
+            <label class="pagination-item" for="1"><img src="Imagenes/Unemipag1.jpg"></label>
+            <label class="pagination-item" for="2"><img src="Imagenes/Unemipg2.jpg"></label>
+            <label class="pagination-item" for="3"><img src="Imagenes/Unemipg3.jpg"></label>
+        </div>
+        </a>
+    </div>
+
+    <div class="anuncontainer">
+        <div class="announcement">
+            <img src="Imagenes/Economia" alt="Evento de Economía" class="event-image"> <a href="anuncios.html"></a>
+            <h2>Conferencia: El Futuro de la Economía Global</h2>
+            <p>Fecha del evento: 20 de junio de 2024</p>
+            <p>Ubicación: Auditorio Principal, Universidad de Estatal de Milagro</p>
+        </div>
+        
+    </div>
+    
+    <div class="calendarname">
+        <p>Calendario</p>
+        
+    </div>
+
+    <div style="width: 100%; margin:auto" id="calendar"></div>
+    <script src="calendar.js"></script>
+</body>
+</html>
